@@ -7,9 +7,9 @@ var Docs = React.createClass({
 
   render: function() {
     return (
-      <App className="docs" centered={false}>
+      <div>
         {this.props.children}
-      </App>
+      </div>
     );
   }
 

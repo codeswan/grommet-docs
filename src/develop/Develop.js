@@ -229,9 +229,9 @@ var DevelopDocument = React.createClass({
   render: function () {
     var title = <Link to={this.context.routePrefix + "develop"}>Develop</Link>;
     return (
-      <DocsSplit title={title} contents={CONTENTS} onChange={this._highlightCode}>
+      <div>
         {this.props.children}
-      </DocsSplit>
+      </div>
     );
   }
 });
