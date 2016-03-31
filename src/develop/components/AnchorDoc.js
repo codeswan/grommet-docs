@@ -47,6 +47,8 @@ export default class AnchorDoc extends Component {
             <dd>Click handler.</dd>
             <dt><code>primary        true|false</code></dt>
             <dd>Whether this is a primary anchor.</dd>
+            <dt><code>animateIcon    true|false</code></dt>
+            <dd>Whether to animate the icon on mouse hover. Default is true and only valid when <code>primary</code> is set to true.</dd>
             <dt><code>reverse        true|false</code></dt>
             <dd>Whether an icon and label should be reversed so that the icon
               is at the end of the anchor.</dd>
