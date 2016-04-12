@@ -5,6 +5,9 @@ var Link = require('react-router').Link;
 var jsxToString = require('jsx-to-string');
 var DocsArticle = require('../../DocsArticle');
 var Factoid = require('grommet/components/Factoid');
+var AssistantIcon = require('grommet/components/icons/base/Assistant');
+var AchievementIcon = require('grommet/components/icons/base/Achievement');
+var LinkUpIcon = require('grommet/components/icons/base/LinkUp');
 
 Factoid.displayName = 'Factoid';
 
@@ -37,11 +40,11 @@ var FactoidDoc = React.createClass({
     );
 
     var smallFactoid = (
-      <Factoid size="small" iconBefore="Assistant" text="100%" iconAfter="Achievement" caption="Teeny tiny Factoid with icons" />
+      <Factoid size="small" iconBefore={<AssistantIcon />} text="100%" iconAfter={<AchievementIcon />} caption="Teeny tiny Factoid with icons" />
     );
 
     var bigFactoid = (
-      <Factoid size="large" text="1000%" iconAfter="LinkUp" caption="Huge Factoid" />
+      <Factoid size="large" text="1000%" iconAfter={<LinkUpIcon />} caption="Huge Factoid" />
     );
 
     return (
