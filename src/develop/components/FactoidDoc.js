@@ -48,13 +48,13 @@ var FactoidDoc = React.createClass({
         <section>
           <h2>Options</h2>
           <dl>
-            <dt><code>size       small|medium|large</code></dt>
+            <dt><code>size            small|medium|large</code></dt>
             <dd>The size of the Factoid. Defaults to <code>medium</code>.</dd>
-            <dt><code>data       string</code></dt>
+            <dt><code>data            string</code></dt>
             <dd>The very large number.  This parameter is required</dd>
             <dt><code>iconBefore      string</code></dt>
             <dd>Name of the icon to go before the data.  See <Link to={this.context.routePrefix + "icon"}>Icon</Link> for available options.  This parameter is optional.</dd>
-            <dt><code>iconAfter      string</code></dt>
+            <dt><code>iconAfter       string</code></dt>
             <dd>Name of the icon to go after the data.  See <Link to={this.context.routePrefix + "icon"}>Icon</Link> for available options.  This parameter is optional.</dd>
             <dt><code>caption         string</code></dt>
             <dd>Caption for the factoid.  Optional.</dd>
