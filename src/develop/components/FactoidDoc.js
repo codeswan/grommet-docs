@@ -12,6 +12,11 @@ var inline =
       "<Factoid />";
 
 var FactoidDoc = React.createClass({
+
+  contextTypes: {
+    routePrefix: React.PropTypes.string.isRequired
+  },
+
   _renderCode(name, jsx) {
     return (
       <div>
