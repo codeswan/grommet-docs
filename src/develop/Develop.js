@@ -31,6 +31,7 @@ var CheckBoxDoc = require('./components/CheckBoxDoc');
 var ColumnsDoc = require('./components/ColumnsDoc');
 var DashboardDoc = require('./patterns/DashboardDoc');
 var DistributionDoc = require('./components/DistributionDoc');
+var FactoidDoc = require('./components/FactoidDoc');
 var FooterDoc = require('./components/FooterDoc');
 var FormDoc = require('./components/FormDoc');
 var FormFieldDoc = require('./components/FormFieldDoc');
@@ -109,6 +110,7 @@ var CONTENTS = [
       {route: 'develop_check-box', label: 'CheckBox', component: CheckBoxDoc},
       {route: 'develop_columns', label: 'Columns', component: ColumnsDoc},
       {route: 'develop_distribution', label: 'Distribution', component: DistributionDoc},
+      {route: 'develop_factoid', label: 'Factoid', component: FactoidDoc},
       {route: 'develop_footer', label: 'Footer', component: FooterDoc},
       {route: 'develop_form', label: 'Form', component: FormDoc},
       {route: 'develop_form-field', label: 'FormField', component: FormFieldDoc},
