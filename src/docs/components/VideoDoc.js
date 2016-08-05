@@ -68,15 +68,8 @@ export default class VideoDoc extends Component {
             <dt><code>showControls      true|false</code></dt>
             <dd>Show controls such as play button, progress bar, etc. on
               top of video. Defaults to <code>true</code>.</dd>
-            <dt><code>timeline          {"[{...}]"}</code></dt>
-            <dd>An array of: <code>
-              {"{label: <string>, seconds: <number>}"}
-              </code> used to indicate chapter markers.</dd>
             <dt><code>title             {"{string}|{node}"}</code></dt>
             <dd>Descriptive title.</dd>
-            <dt><code>videoHeader       {"{node}"}</code></dt>
-            <dd>For instances when the video and header components are used
-              together.</dd>
           </dl>
         </section>
 
@@ -84,17 +77,15 @@ export default class VideoDoc extends Component {
           <h2>Examples</h2>
 
           <Example name="Simple" code={
-            <Video>
+            <Video title="HPE Video" shareLink="http://hpe.com" muted={true}
+              autoPlay={true} loop={true}
+              showControls={true} allowFullScreen={false}>
               <source src="/video/test.mp4" type='video/mp4'/>
             </Video>
           } />
-          <Example name="Title, Duration, Timeline, Poster, Full" code={
-            <Video title="Title" poster="/img/mobile_first.jpg" full={true}
-              duration={35} timeline={[
-                {label: 'Chapter 1', time: 0},
-                {label: 'Chapter 2', time: 10},
-                {label: 'Chapter 3', time: 20}
-              ]}>
+          <Example name="Title, Duration, Poster, Full" code={
+            <Video title="Title" poster="/img/mobile_first.jpg"
+              full={true} duration={35}>
               <source src="/video/test.mp4" type="video/mp4"/>
             </Video>
           } />
