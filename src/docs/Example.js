@@ -18,19 +18,30 @@ export default class Example extends Component {
   }
 
   render () {
-    const { align, code, control, name } = this.props;
+    const { align, code, control, name, preamble } = this.props;
     let heading;
     if (name) {
       heading = <h3>{name}</h3>;
     }
+    let importStatement;
+    if (preamble) {
+      importStatement = preamble
+        .replace(/^\s+/,'')
+        .replace(/\n\s+/g, "\n")
+        .replace(/[^\n]$/, "\n");
+    }
+
     return (
       <Box flex={true}>
         {heading}
         <Box pad={{ between: 'medium' }} align={align}>
           {control || code}
-          <pre><code className="html hljs xml">
-            {this._renderCode()}
-          </code></pre>
+          <pre>
+            <code className="html xml hljs">
+              {importStatement}
+              {this._renderCode()}
+            </code>
+          </pre>
         </Box>
       </Box>
     );
@@ -42,5 +53,6 @@ Example.propTypes = {
   code: PropTypes.node.isRequired,
   control: PropTypes.node, // for LayerDoc
   name: PropTypes.string,
-  overrides: PropTypes.arrayOf(PropTypes.string)
+  overrides: PropTypes.arrayOf(PropTypes.string),
+  preamble: PropTypes.string
 };
