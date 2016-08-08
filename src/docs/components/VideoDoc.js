@@ -45,8 +45,6 @@ export default class VideoDoc extends Component {
             <dd>The color identifier to use for the background color.
               For example: <code>"neutral-1"</code>. This is visible when a
               poster image is not the same aspect ratio as the video.</dd>
-            <dt><code>duration          {"{number}"}</code></dt>
-            <dd>The length of the video in seconds.</dd>
             <dt><code>full              true|false</code></dt>
             <dd>Whether the width should take the full container width.</dd>
             <dt><code>onClick           {"{function}"}</code></dt>
@@ -83,9 +81,8 @@ export default class VideoDoc extends Component {
               <source src="/video/test.mp4" type='video/mp4'/>
             </Video>
           } />
-          <Example name="Title, Duration, Poster, Full" code={
-            <Video title="Title" poster="/img/mobile_first.jpg"
-              full={true} duration={35}>
+          <Example name="Title, Poster, Full" code={
+            <Video title="Title" poster="/img/mobile_first.jpg" full={true}>
               <source src="/video/test.mp4" type="video/mp4"/>
             </Video>
           } />
