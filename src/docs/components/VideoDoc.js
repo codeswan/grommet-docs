@@ -47,9 +47,6 @@ export default class VideoDoc extends Component {
               poster image is not the same aspect ratio as the video.</dd>
             <dt><code>full              true|false</code></dt>
             <dd>Whether the width should take the full container width.</dd>
-            <dt><code>onClick           {"{function}"}</code></dt>
-            <dd>Click handler to override the default click handler to play
-              video and pass in a different function instead.</dd>
             <dt><code>loop              true|false</code></dt>
             <dd>Enables continuous video looping. Defaults
               to <code>false</code>.</dd>
@@ -68,11 +65,8 @@ export default class VideoDoc extends Component {
               top of video. Defaults to <code>true</code>.</dd>
             <dt><code>title             {"{string}|{node}"}</code></dt>
             <dd>Descriptive title.</dd>
-            <dt><code>timeline       {"[{...}]"}</code></dt>
-            <dd>An array of: <code>{"{label: <string>, time: <number>}"}
-              </code> for each point on the timeline.</dd>
             <dt><code>shareLink         {"{string}"}</code></dt>
-            <dd>Link to be used for social media sharing.</dd>
+            <dd>Link to be used for social media sharing. Shown at the end of the video.</dd>
             <dt><code>shareHeadline     {"{string}"}</code></dt>
             <dd>Headline to be used for social media sharing.</dd>
             <dt><code>shareText         {"{string}"}</code></dt>
