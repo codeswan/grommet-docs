@@ -75,22 +75,31 @@ export default class VideoDoc extends Component {
           <h2>Examples</h2>
 
           <Example name="Simple" code={
-            <Video title="HPE Video" shareLink="http://hpe.com" muted={true}
-              autoPlay={true} loop={true}
-              showControls={true} allowFullScreen={false}>
+            <Video>
               <source src="/video/test.mp4" type='video/mp4'/>
             </Video>
           } />
+
+          <Example name="Replay with Share Menu" code={
+            <Video title="HPE Video"
+              shareLink="http://grommet.io"
+              shareText="Website for Grommet UX Framework">
+              <source src="/video/test.mp4" type='video/mp4'/>
+            </Video>
+          } />
+
           <Example name="Title, Poster, Full" code={
             <Video title="Title" poster="/img/mobile_first.jpg" full={true}>
               <source src="/video/test.mp4" type="video/mp4"/>
             </Video>
           } />
+
           <Example name="Small" code={
             <Video size="small">
               <source src="/video/test.mp4" type="video/mp4"/>
             </Video>
           } />
+
           <Example name="Large" code={
             <Video size="large">
               <source src="/video/test.mp4" type="video/mp4"/>
