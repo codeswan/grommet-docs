@@ -66,7 +66,8 @@ export default class VideoDoc extends Component {
             <dt><code>title             {"{string}|{node}"}</code></dt>
             <dd>Descriptive title.</dd>
             <dt><code>shareLink         {"{string}"}</code></dt>
-            <dd>Link to be used for social media sharing. Shown at the end of the video.</dd>
+            <dd>Link to be used for social media sharing.
+              Shown at the end of the video.</dd>
             <dt><code>shareHeadline     {"{string}"}</code></dt>
             <dd>Headline to be used for social media sharing.</dd>
             <dt><code>shareText         {"{string}"}</code></dt>
