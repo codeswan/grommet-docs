@@ -68,6 +68,15 @@ export default class VideoDoc extends Component {
               top of video. Defaults to <code>true</code>.</dd>
             <dt><code>title             {"{string}|{node}"}</code></dt>
             <dd>Descriptive title.</dd>
+            <dt><code>timeline       {"[{...}]"}</code></dt>
+            <dd>An array of: <code>{"{label: <string>, time: <number>}"}
+              </code> for each point on the timeline.</dd>
+            <dt><code>shareLink         {"{string}"}</code></dt>
+            <dd>Link to be used for social media sharing.</dd>
+            <dt><code>shareHeadline     {"{string}"}</code></dt>
+            <dd>Headline to be used for social media sharing.</dd>
+            <dt><code>shareText         {"{string}"}</code></dt>
+            <dd>Text to be used for social media sharing.</dd>
           </dl>
         </section>
 
