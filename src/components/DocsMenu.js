@@ -4,10 +4,10 @@ import React, { Component, PropTypes } from 'react';
 import Menu from 'grommet/components/Menu';
 import Box from 'grommet/components/Box';
 import Heading from 'grommet/components/Heading';
-import Footer from 'grommet/components/Footer';
-import Contents from '../docs/Contents';
+// import Footer from 'grommet/components/Footer';
+// import Contents from '../docs/Contents';
 import NavAnchor from './NavAnchor';
-import ThemeMenu from './ThemeMenu';
+// import ThemeMenu from './ThemeMenu';
 
 export default class DocsMenu extends Component {
 
@@ -52,16 +52,10 @@ export default class DocsMenu extends Component {
   }
 
   render () {
-    const menuItems = this._renderMenuItems(Contents, null);
+    // const menuItems = this._renderMenuItems(Contents, null);
 
     return (
-      <Menu direction="column" align="start" justify="between" primary={true}>
-        {menuItems}
-        <Footer primary={true} colorIndex="light-2"
-          pad={{ horizontal: 'medium' }}>
-          <ThemeMenu align="left" />
-        </Footer>
-      </Menu>
+      null
     );
   }
 };

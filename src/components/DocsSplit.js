@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { Link } from 'react-router';
-import Split from 'grommet/components/Split';
+// import Split from 'grommet/components/Split';
 import Sidebar from 'grommet/components/Sidebar';
 import Header from 'grommet/components/Header';
 import Title from 'grommet/components/Title';
@@ -117,14 +117,10 @@ export default class DocsSplit extends Component {
   }
 
   render () {
-    let priority = ('single' === this.state.responsive && this.state.showMenu ?
-      'left' : 'right');
     return (
-      <Split flex="right" priority={priority} fixed={true}
-        onResponsive={this._onResponsive}>
-        {this._renderMenu()}
+      <div>
         {this._renderDoc()}
-      </Split>
+      </div>
     );
   }
 };

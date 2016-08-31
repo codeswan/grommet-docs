@@ -1,11 +1,11 @@
 // (C) Copyright 2014-2016 Hewlett Packard Enterprise Development LP
 
 import React, { Component, PropTypes } from 'react';
-import Article from 'grommet/components/Article';
-import Header from 'grommet/components/Header';
+// import Article from 'grommet/components/Article';
+// import Header from 'grommet/components/Header';
 import Box from 'grommet/components/Box';
 import { announcePageLoaded } from 'grommet/utils/Announcer';
-import DocsFooter from './DocsFooter';
+// import DocsFooter from './DocsFooter';
 
 const DEFAULT_TITLE = 'Grommet';
 
@@ -27,16 +27,9 @@ export default class DocsArticle extends Component {
       pad = {horizontal: 'large'};
     }
     return (
-      <Article className="docs-article" primary={true}>
-        <Header size="large" pad={{horizontal: 'large'}}
-          colorIndex={this.props.colorIndex}>
-          <h1>{this.props.title}</h1>
-        </Header>
-        <Box pad={pad}>
-          {this.props.children}
-        </Box>
-        <DocsFooter />
-      </Article>
+      <Box pad={pad}>
+        {this.props.children}
+      </Box>
     );
   }
 };

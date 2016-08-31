@@ -3,10 +3,10 @@
 import React, { Component } from 'react';
 import DocsArticle from '../../components/DocsArticle';
 import NavAnchor from '../../components/NavAnchor';
-import Example from '../Example';
+// import Example from '../Example';
 import Menu from 'grommet/components/Menu';
-import ConfigIcon from 'grommet/components/icons/base/Configuration';
-import FilterIcon from 'grommet/components/icons/base/Filter';
+// import ConfigIcon from 'grommet/components/icons/base/Configuration';
+// import FilterIcon from 'grommet/components/icons/base/Filter';
 import CheckBox from 'grommet/components/CheckBox';
 import Anchor from 'grommet/components/Anchor';
 import Button from 'grommet/components/Button';
@@ -28,7 +28,7 @@ export default class MenuDoc extends Component {
 
         <section>
           <p>Presents a list of choices responsively.</p>
-          <Menu label="Label">
+          <Menu label="Label" direction="row" justify="end" inline={true}>
             <Anchor href="#" className="active">First</Anchor>
             <Anchor href="#">Second</Anchor>
             <Anchor href="#">Third</Anchor>
@@ -71,96 +71,6 @@ export default class MenuDoc extends Component {
           </dl>
           <p>Options for <NavAnchor path="/docs/box">Box</NavAnchor> are
           also available.</p>
-        </section>
-
-        <section>
-          <h2>Examples</h2>
-
-          <Example name="column, inline" code={
-            <Menu>
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="row, inline" code={
-            <Menu direction="row">
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="row, end, inline, label" code={
-            <Menu direction="row" justify="end" inline={true} label="Menu">
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="label, down, not inline" code={
-            <Menu label="Label">
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="icon, down, not inline" code={
-            <Menu inline={false}>
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="custom icon, down, not inline" code={
-            <Menu icon={<ConfigIcon />}>
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="custon icon, label, down, not inline" code={
-            <Menu icon={<ConfigIcon />} label="Label">
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="custom icon, down, not inline, do not close on click"
-            code={
-            <Menu icon={<FilterIcon />} closeOnClick={false} pad="medium">
-              <CheckBox id="check-1" label="first" />
-              <CheckBox id="check-2" label="second" />
-              <CheckBox id="check-3" label="third" />
-            </Menu>
-          } />
-          <Example name="not inline, up" code={
-            <Menu inline={false} dropAlign={{bottom: "bottom"}}>
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="button bar" code={
-            <Menu direction="row">
-              <Button label="Button 1" onClick={this._onClick} />
-              <Button label="Button 2" onClick={this._onClick} />
-              <Button label="Button 3" onClick={this._onClick} />
-            </Menu>
-          } />
-          <Example name="small" code={
-            <Menu direction="row" size="small">
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
-          <Example name="large" code={
-            <Menu direction="row" size="large">
-              <Anchor href="#" className="active">First</Anchor>
-              <Anchor href="#">Second</Anchor>
-              <Anchor href="#">Third</Anchor>
-            </Menu>
-          } />
         </section>
 
       </DocsArticle>
